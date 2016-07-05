@@ -1,13 +1,13 @@
 package ru.dgis.casino.plain;
 
 import org.apache.kafka.common.errors.SerializationException;
-import org.apache.kafka.common.serialization.*;
+import org.apache.kafka.common.serialization.LongDeserializer;
+import org.apache.kafka.common.serialization.LongSerializer;
 import org.apache.kafka.connect.data.Schema;
 import org.apache.kafka.connect.data.SchemaAndValue;
 import org.apache.kafka.connect.errors.DataException;
 import org.apache.kafka.connect.storage.Converter;
 
-import java.util.HashMap;
 import java.util.Map;
 
 
