@@ -15,18 +15,19 @@ Right now we provides two additional formats: `ru.dgis.casino.plain.GzipTextForm
 
 Here it is an example of topic config
 ```
-name=SOME-NAME-HERE
 connector.class=io.confluent.connect.hdfs.HdfsSinkConnector
 format.class=ru.dgis.casino.plain.GzipTextFormat
+partitioner.class=io.confluent.connect.hdfs.partitioner.TimeBasedPartitioner
+path.format=YYYY/MM/dd
+name=SOME_NAME_HERE
 topics=TOPIC
 hdfs.url=hdfs://YOUR_HADOOP
 logs.dir=LOGS_DIR
 topics.dir=TOPICS_DIR
+
 flush.size=100000
-path.format=YYYY/MM/dd
 locale=ru_RU
 timezone=Asia/Novosibirsk
-partitioner.class=io.confluent.connect.hdfs.partitioner.TimeBasedPartitioner
 ```
 
 We will publish next release to bintray soon.
