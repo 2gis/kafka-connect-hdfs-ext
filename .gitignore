@@ -27,3 +27,4 @@ test-output
 .tmpBin
 log.txt
 *.iml
+etc/
