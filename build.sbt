@@ -18,3 +18,26 @@ libraryDependencies ++= Seq(
 )
 
 autoScalaLibrary := false
+
+releaseVersionBump := sbtrelease.Version.Bump.Minor
+
+bintrayReleaseOnPublish in ThisBuild := false
+
+bintrayOrganization := Some("2gis")
+
+licenses += "MPL-2.0" -> url("https://www.mozilla.org/en-US/MPL/2.0/")
+
+publishTo := {
+  val maybeOriginalRepo = publishTo.value
+  if (isSnapshot.value)
+    Some("OSS JFrog Snapshots" at "https://oss.jfrog.org/artifactory/oss-snapshot-local")
+  else maybeOriginalRepo
+}
+
+credentials += Credentials(
+  "Artifactory Realm",
+  "oss.jfrog.org",
+  Option(System.getenv("OSS_JFROG_USER")).getOrElse(""),
+  Option(System.getenv("OSS_JFROG_PASSWORD")).getOrElse("")
+)
+
