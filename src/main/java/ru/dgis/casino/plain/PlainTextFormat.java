@@ -1,11 +1,7 @@
 package ru.dgis.casino.plain;
 
 import io.confluent.connect.avro.AvroData;
-import io.confluent.connect.hdfs.Format;
-import io.confluent.connect.hdfs.HdfsSinkConnectorConfig;
-import io.confluent.connect.hdfs.RecordWriter;
-import io.confluent.connect.hdfs.RecordWriterProvider;
-import io.confluent.connect.hdfs.SchemaFileReader;
+import io.confluent.connect.hdfs.*;
 import io.confluent.connect.hdfs.hive.HiveMetaStore;
 import io.confluent.connect.hdfs.hive.HiveUtil;
 import org.apache.hadoop.conf.Configuration;
@@ -51,7 +47,7 @@ public class PlainTextFormat implements Format {
     }
 
     @Override
-    public HiveUtil getHiveUtil(HdfsSinkConnectorConfig config, AvroData avroData, HiveMetaStore hiveMetaStore) {
+    public HiveUtil getHiveUtil(HdfsSinkConnectorConfig hdfsSinkConnectorConfig, HiveMetaStore hiveMetaStore) {
         return null;
     }
 }
