@@ -1,4 +1,4 @@
-organization := "ru.dgis.casino"
+organization := "ru.dgis"
 
 name := "kafka-connect-hdfs-ext"
 
