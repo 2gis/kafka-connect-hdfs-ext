@@ -1,3 +1,5 @@
+[ ![Download](https://api.bintray.com/packages/2gis/maven/kafka-connect-hdfs-ext/images/download.svg) ](https://bintray.com/2gis/maven/kafka-connect-hdfs-ext/_latestVersion)
+
 # kafka-connect-hdfs-ext
 
 This project provides extensions for [kafka-connect-hdfs](https://github.com/confluentinc/kafka-connect-hdfs) project.
@@ -30,4 +32,3 @@ locale=ru_RU
 timezone=Asia/Novosibirsk
 ```
 
-We will publish next release to bintray soon.
