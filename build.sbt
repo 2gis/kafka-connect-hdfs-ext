@@ -2,16 +2,19 @@ organization := "ru.dgis.casino"
 
 name := "kafka-connect-hdfs-ext"
 
-val kafkaV = "0.10.0.1-cp1"
+val kafkaVersion = "1.1.0"
 
-val confluentV = "3.0.1"
+val confluentVersion = "4.1.0"
 
-resolvers += "Confluent repo" at "http://packages.confluent.io/maven/"
+resolvers ++= Seq(
+  "Confluent repo" at "http://packages.confluent.io/maven/",
+  "Spring Plugins repo" at "http://repo.spring.io/plugins-release/"
+)
 
 libraryDependencies ++= Seq(
-  "org.apache.kafka" % "connect-runtime" % kafkaV % "runtime",
-  "org.apache.kafka" % "connect-api" % kafkaV % "provided",
-  "io.confluent" % "kafka-connect-hdfs" % confluentV % "provided"
+  "org.apache.kafka" % "connect-api" % kafkaVersion % "provided",
+  "io.confluent" % "kafka-connect-hdfs" % confluentVersion % "provided",
+  "org.apache.kafka" % "connect-runtime" % kafkaVersion % "test"
 )
 
 autoScalaLibrary := false
