@@ -41,3 +41,4 @@ credentials += Credentials(
   Option(System.getenv("OSS_JFROG_PASSWORD")).getOrElse("")
 )
 
+crossPaths := false
