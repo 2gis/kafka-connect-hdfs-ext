@@ -19,7 +19,10 @@ public class GzipTextFormat implements Format {
         return new RecordWriterProvider() {
             @Override
             public String getExtension() {
-                return ".txt.gz";
+                // kafka-connect-hdfs doesn't support multiple file extensions like .txt.gz
+                // when searching for files during recovery process
+                // that is why the extension used by this format is concatenated
+                return ".txtgz";
             }
 
             @Override
