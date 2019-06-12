@@ -2,9 +2,9 @@ organization := "ru.dgis"
 
 name := "kafka-connect-hdfs-ext"
 
-val kafkaVersion = "1.1.0"
+val kafkaVersion = "2.2.1"
 
-val confluentVersion = "4.1.0"
+val confluentVersion = "5.1.3"
 
 resolvers ++= Seq(
   "Confluent repo" at "http://packages.confluent.io/maven/",
