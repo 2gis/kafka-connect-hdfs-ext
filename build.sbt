@@ -2,7 +2,7 @@ organization := "ru.dgis"
 
 name := "kafka-connect-hdfs-ext"
 
-val kafkaVersion = "2.2.1"
+val kafkaVersion = "2.3.0"
 
 val confluentVersion = "5.2.3"
 
