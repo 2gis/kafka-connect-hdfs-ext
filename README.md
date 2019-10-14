@@ -6,16 +6,14 @@ This project provides extensions for [kafka-connect-hdfs](https://github.com/con
 
 # Formats
 
-Right now we provides two additional formats: `ru.dgis.casino.plain.GzipTextFormat` and `ru.dgis.casino.plain.PlainTextFormat`.
+The project provides an additional HDFS connector format: `ru.dgis.casino.plain.GzipTextFormat`.
 
-`PlainTextFormat` is format that saves each message to hdfs as string and separates messages with `\n`. 
-`PlainTextFormat` drops key value.
-
-`GzipTextFormat` is the same format as `PlainTextFormat` but also performs compression via `gzip`.
+`GzipTextFormat` writes each record value as `String` separated with `\n` 
+and also performs compression via `GZIPOutputStream`.
 
 # How to use
 
-Here it is an example of topic config
+Here is an example of a connector config:
 ```
 connector.class=io.confluent.connect.hdfs.HdfsSinkConnector
 format.class=ru.dgis.casino.plain.GzipTextFormat
