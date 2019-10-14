@@ -4,7 +4,7 @@ name := "kafka-connect-hdfs-ext"
 
 val kafkaVersion = "2.2.1"
 
-val confluentVersion = "5.1.3"
+val confluentVersion = "5.2.3"
 
 resolvers ++= Seq(
   "Confluent repo" at "http://packages.confluent.io/maven/",
