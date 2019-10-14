@@ -12,7 +12,7 @@ import java.util.Map;
 
 
 /**
- * @see org.apache.kafka.connect.converters.LongConverter
+ * see org.apache.kafka.connect.converters.LongConverter
  */
 @Deprecated
 public class LongConverter implements Converter {
