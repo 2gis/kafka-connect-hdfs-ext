@@ -13,8 +13,7 @@ resolvers ++= Seq(
 
 libraryDependencies ++= Seq(
   "org.apache.kafka" % "connect-api" % kafkaVersion % "provided",
-  "io.confluent" % "kafka-connect-hdfs" % confluentVersion % "provided",
-  "org.apache.kafka" % "connect-runtime" % kafkaVersion % "test"
+  "io.confluent" % "kafka-connect-hdfs" % confluentVersion % "provided"
 )
 
 autoScalaLibrary := false
