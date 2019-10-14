@@ -11,6 +11,10 @@ import org.apache.kafka.connect.sink.SinkRecord;
 
 import java.io.IOException;
 
+/**
+ * @see io.confluent.connect.hdfs.string.StringFormat
+ */
+@Deprecated
 public class PlainTextFormat implements Format {
     @Override
     public RecordWriterProvider getRecordWriterProvider() {

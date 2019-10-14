@@ -11,6 +11,10 @@ import org.apache.kafka.connect.storage.Converter;
 import java.util.Map;
 
 
+/**
+ * @see org.apache.kafka.connect.converters.LongConverter
+ */
+@Deprecated
 public class LongConverter implements Converter {
     private final LongSerializer serializer = new LongSerializer();
     private final LongDeserializer deserializer = new LongDeserializer();
@@ -27,7 +31,7 @@ public class LongConverter implements Converter {
         try {
             return serializer.serialize(topic, value == null ? null : ((Long) value));
         } catch (SerializationException e) {
-            throw new DataException("Failed to serialize to a string: ", e);
+            throw new DataException("Failed to serialize to a long: ", e);
         }
     }
 
