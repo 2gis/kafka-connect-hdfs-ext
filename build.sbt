@@ -7,8 +7,8 @@ val kafkaVersion = "2.3.0"
 val confluentVersion = "5.2.3"
 
 resolvers ++= Seq(
-  "Confluent repo" at "http://packages.confluent.io/maven/",
-  "Spring Plugins repo" at "http://repo.spring.io/plugins-release/"
+  "Confluent repo" at "https://packages.confluent.io/maven/",
+  "Spring Plugins repo" at "https://repo.spring.io/plugins-release/"
 )
 
 libraryDependencies ++= Seq(
