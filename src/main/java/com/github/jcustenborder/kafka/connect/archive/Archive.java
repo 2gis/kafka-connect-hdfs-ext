@@ -29,8 +29,7 @@ import java.util.Map;
  * Adapted implementation for HDFS Sink Connector
  * that produces immutable schema suitable for comparison in TopicPartitionWriter.
  *
- * @param <R>
- * @see https://github.com/jcustenborder/kafka-connect-transform-archive
+ * Original source code at https://github.com/jcustenborder/kafka-connect-transform-archive
  */
 public class Archive<R extends ConnectRecord<R>> implements Transformation<R> {
   @Override
