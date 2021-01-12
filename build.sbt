@@ -20,7 +20,7 @@ autoScalaLibrary := false
 
 releaseVersionBump := sbtrelease.Version.Bump.Minor
 
-bintrayReleaseOnPublish in ThisBuild := false
+bintrayReleaseOnPublish in ThisBuild := true
 
 bintrayOrganization := Some("2gis")
 
