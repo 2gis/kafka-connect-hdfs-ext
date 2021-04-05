@@ -1,4 +1,4 @@
-[ ![Download](https://api.bintray.com/packages/2gis/maven/kafka-connect-hdfs-ext/images/download.svg) ](https://bintray.com/2gis/maven/kafka-connect-hdfs-ext/_latestVersion)
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/io.github.2gis/kafka-connect-hdfs-ext/badge.svg)](https://maven-badges.herokuapp.com/maven-central/io.github.2gis/kafka-connect-hdfs-ext)
 
 # kafka-connect-hdfs-ext
 
