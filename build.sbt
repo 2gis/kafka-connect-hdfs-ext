@@ -17,5 +17,3 @@ libraryDependencies ++= Seq(
 
 autoScalaLibrary := false
 
-releaseVersionBump := sbtrelease.Version.Bump.Minor
-
